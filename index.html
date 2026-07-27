@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hualeithlinden - Professional Junk Removal Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Hualeithlinden</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Professional Junk Removal Services</h1>
+            <p>Fast, Reliable, and Affordable Junk Removal Across NY, PA, NJ, and CT</p>
+            <a href="#booking" class="cta-button">Schedule Your Pickup</a>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Service Areas</h2>
+            <div class="service-areas">
+                <div class="area-card">
+                    <h3>New York</h3>
+                    <p>All 5 Boroughs</p>
+                    <ul>
+                        <li>Manhattan</li>
+                        <li>Brooklyn</li>
+                        <li>Queens</li>
+                        <li>Bronx</li>
+                        <li>Staten Island</li>
+                    </ul>
+                </div>
+                <div class="area-card">
+                    <h3>New Jersey</h3>
+                    <p>Statewide Service</p>
+                </div>
+                <div class="area-card">
+                    <h3>Pennsylvania</h3>
+                    <p>Statewide Service</p>
+                </div>
+                <div class="area-card">
+                    <h3>Connecticut</h3>
+                    <p>Statewide Service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Calculator -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Load-Based Pricing</h2>
+            <div class="pricing-calculator">
+                <h3>Estimate Your Cost</h3>
+                <div class="load-options">
+                    <div class="load-card" onclick="selectLoad('small')">
+                        <input type="radio" name="load" value="small" id="small">
+                        <label for="small">
+                            <h4>Small Load</h4>
+                            <p>1/4 Truck Bed</p>
+                            <p class="price">$150 - $250</p>
+                        </label>
+                    </div>
+                    <div class="load-card" onclick="selectLoad('medium')">
+                        <input type="radio" name="load" value="medium" id="medium">
+                        <label for="medium">
+                            <h4>Medium Load</h4>
+                            <p>1/2 Truck Bed</p>
+                            <p class="price">$300 - $450</p>
+                        </label>
+                    </div>
+                    <div class="load-card" onclick="selectLoad('large')">
+                        <input type="radio" name="load" value="large" id="large">
+                        <label for="large">
+                            <h4>Large Load</h4>
+                            <p>Full Truck Bed</p>
+                            <p class="price">$500 - $750</p>
+                        </label>
+                    </div>
+                    <div class="load-card" onclick="selectLoad('extra')">
+                        <input type="radio" name="load" value="extra" id="extra">
+                        <label for="extra">
+                            <h4>Extra Large</h4>
+                            <p>Multiple Trips</p>
+                            <p class="price">$750+</p>
+                        </label>
+                    </div>
+                </div>
+                <p class="pricing-note">*Final pricing determined after site assessment. Additional services (heavy lifting, hazardous materials) may apply.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Before+and+After+1" alt="Project 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Before+and+After+2" alt="Project 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Before+and+After+3" alt="Project 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Before+and+After+4" alt="Project 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Before+and+After+5" alt="Project 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Before+and+After+6" alt="Project 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Schedule Your Service</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">Zip Code *</label>
+                        <input type="text" id="zip" name="zip" placeholder="Enter your zip code" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="state">State *</label>
+                        <select id="state" name="state" required>
+                            <option value="">Select State</option>
+                            <option value="NY">New York</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="CT">Connecticut</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="time">Preferred Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select Time Slot</option>
+                            <option value="08:00-10:00">8:00 AM - 10:00 AM</option>
+                            <option value="10:00-12:00">10:00 AM - 12:00 PM</option>
+                            <option value="12:00-14:00">12:00 PM - 2:00 PM</option>
+                            <option value="14:00-16:00">2:00 PM - 4:00 PM</option>
+                            <option value="16:00-18:00">4:00 PM - 6:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="load">Load Size *</label>
+                        <select id="load" name="load" required>
+                            <option value="">Select Load Size</option>
+                            <option value="small">Small Load (1/4 Truck Bed)</option>
+                            <option value="medium">Medium Load (1/2 Truck Bed)</option>
+                            <option value="large">Large Load (Full Truck Bed)</option>
+                            <option value="extra">Extra Large (Multiple Trips)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="description">Describe Your Junk *</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Tell us what you need removed..." required></textarea>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="address">Service Address *</label>
+                    <textarea id="address" name="address" rows="2" placeholder="Street address where we'll pick up" required></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+
+                <button type="submit" class="submit-button">Request Booking</button>
+                <p class="form-note">We'll contact you within 24 hours to confirm your booking and finalize pricing.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@hualeithlinden.com">info@hualeithlinden.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>🕐 Hours</h3>
+                    <p>Monday - Saturday: 8 AM - 6 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Hualeithlinden Junk Removal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
