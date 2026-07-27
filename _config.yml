@@ -1,7 +1,5 @@
 # GitHub Pages Configuration
-theme: null
-plugins:
-  - jekyll-sitemap
+markdown: kramdown
 
 # Site metadata
 title: Hualeithlinden - Junk Removal Services
@@ -9,7 +7,6 @@ description: Professional junk removal services across NY, PA, NJ, and CT
 url: "https://prvttransport25.github.io/hualeithlinden-junk-removal"
 
 # Build settings
-markdown: kramdown
 exclude:
   - node_modules
   - vendor
